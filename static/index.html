@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/1ee95f46e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="imgs/logo.png" />
+      <h1>Joke Generator</h1>
+      <button id="deleteAllBtn">Delete All</button>
+    </header>
+    <main>
+      <article>
+        <h2>Add a Joke:</h2>
+        <div class="form">
+          <input id="authorInput" placeholder="Author name" />
+          <span id="auErr" class="errorInput"></span>
+          <textarea
+            id="JokeInput"
+            cols="30"
+            rows="5"
+            placeholder="Joke..."
+          ></textarea>
+          <span id="jokeErr" class="errorInput"> </span>
+
+          <div class="controls">
+            <button id="resetBtn" class="reset">reset</button>
+            <button id="generateBtn" class="generate">Generate!</button>
+            <button id="submitBtn" class="submit">submit</button>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2>Jokes (<span id="span"></span>)</h2>
+        <ul id="ul" class="jokesList">
+          <!-- <li>
+            <div class="likes"><span>12</span> likes</div>
+
+            <div class="content">
+              <h3>Mehdi Tmimi</h3>
+              <p>
+                Que demande un footballeur à son coiffeur ? La coupe du monde
+                s'il vous plait
+              </p>
+            </div>
+
+            <div class="btns">
+              <button class="delete">delete</button>
+              <button class="likeBtn">like</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="likes">12 likes</div>
+
+            <div class="content">
+              <h3>Mehdi Tmimi</h3>
+              <p>
+                Que demande un footballeur à son coiffeur ? La coupe du monde
+                s'il vous plait
+              </p>
+            </div>
+            <div class="btns">
+              <button class="delete">delete</button>
+              <button class="likeBtn">like</button>
+            </div>
+          </li> -->
+        </ul>
+      </article>
+    </main>
+    <footer>
+      &copy; Built by
+      <a target="_blank" href="https://github.com/radouaneeddaouy"
+        >Radouane ED-DAOUY
+      </a>
+    </footer>
+  </body>
+</html>
